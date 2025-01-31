@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 3 v2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="sora">
+    <!-- header start -->
+    <header class="bg-secondary">
+      <div class="max-w-screen-xl mx-auto">
+        <nav class="flex justify-between items-center p-5">
+          <div class="left">
+            <a href="#" class="logo"><img class="w-32" src="./assets/images/logo-header.png" alt="logo" /></a>
+          </div>
+          <div class="right flex items-center lg:gap-24">
+            <ul class="menu list-none flex lg:gap-7">
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+            <ul class="icon-menu flex items-center gap-4">
+              <li>
+                <button class="search-icon align-middle mr-1"><img class="w-5" src="./assets/icons/search.svg" alt="Search icon" /></button>
+              </li>
+              <li>
+                <button class="search-icon align-middle mr-1"><img class="w-7" src="./assets/icons/cart.svg" alt="cart icon" /></button>
+              </li>
+              <li><button class="py-2.5 px-7 rounded-lg border-2 border-primary hover:opacity-90">Login</button></li>
+              <li><button class="py-2.5 px-7 rounded-lg bg-primary text-white hover:opacity-90">Register</button></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- banner  -->
+        <div class="banner-section text-center lg:mt-20">
+          <h1 class="text-[56px] font-semibold">
+            Freshness <span class="text-primary">You Can <br />Count</span>, Prices You’ll Love!
+          </h1>
+          <p class="font-xl lg:mt-6 lg:mb-8">
+            Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br />staples, we’ve got you covered every day!
+          </p>
+          <img class="mx-auto max-w-3xl" src="./assets/images/hero-vegetables.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- services section start -->
+    <section class="services-section bg-white">
+      <div class="max-w-screen-xl mx-auto py-28">
+        <h2 class="text-primary text-4xl font-semibold lg:pb-10">Services</h2>
+        <div class="services-card-wrapper grid grid-flow-col grid-cols-3 gap-6">
+          <!-- service item -->
+          <div class="card bg-secondary p-7 rounded-xl flex flex-col justify-center gap-3 text-center">
+            <figure class="mx-auto bg-white p-5 rounded-full mb-3">
+              <img src="./assets/images/service.png" alt="service 1" />
+            </figure>
+            <h2 class="text-2xl font-semibold">24/7 Services</h2>
+            <p class="text-gray-800">
+              Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit, sed do <br />
+              eiusmod tempor incididunt
+            </p>
+          </div>
+          <!-- service item -->
+          <div class="card bg-secondary p-7 rounded-xl flex flex-col justify-center gap-3 text-center">
+            <figure class="mx-auto bg-white p-5 rounded-full mb-3">
+              <img src="./assets/images/service.png" alt="service 1" />
+            </figure>
+            <h2 class="text-2xl font-semibold">24/7 Services</h2>
+            <p class="text-gray-800">
+              Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit, sed do <br />
+              eiusmod tempor incididunt
+            </p>
+          </div>
+          <!-- service item -->
+          <div class="card bg-secondary p-7 rounded-xl flex flex-col justify-center gap-3 text-center">
+            <figure class="mx-auto bg-white p-5 rounded-full mb-3">
+              <img src="./assets/images/service.png" alt="service 1" />
+            </figure>
+            <h2 class="text-2xl font-semibold">24/7 Services</h2>
+            <p class="text-gray-800">
+              Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit, sed do <br />
+              eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- popular section start -->
+    <section class="services-section bg-secondary">
+      <div class="max-w-screen-xl mx-auto py-28">
+        <h2 class="text-primary text-4xl font-semibold lg:pb-10">Popular Products</h2>
+        <div class="lg:grid grid-flow-col grid-cols-3 gap-6">
+          <div class="ads bg-gradient-to-br from-[#53db3a] to-[#e0f9dc] p-10 rounded-lg relative">
+            <div class="ads-content flex flex-col gap-3 items-start">
+              <h3 class="text-white font-medium text-3xl">30% off</h3>
+              <p class="text-balance text-black opacity-80">Discover a world of treats, toys, and essentials handpicked for</p>
+              <a class="py-2.5 px-7 rounded-lg bg-white" href="#">Buy Now</a>
+            </div>
+            <img class="absolute bottom-0 right-0 w-7/12" src="./assets/images/vegetable-offer.png" alt="" />
+          </div>
+          <div class="popular-products col-span-2">
+            <div class="popular-product-wrapper grid grid-flow-row grid-cols-3 gap-4">
+              <!-- item -->
+              <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
+                <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
+                  <img class="" src="./assets/images/onion.png" alt="product image" />
+                </figure>
+                <div class="product-info flex flex-col content-between items-start">
+                  <div class="review-widget flex gap-2">
+                    <figure><img src="./assets/icons/star.svg" alt="star" /></figure>
+                    <span>4.5</span>
+                  </div>
+                  <h2 class="title font-medium text-xl"><a href="#">Onion 1 KG</a></h2>
+                  <span class="price text-base font-medium">$39.99</span>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
+                <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
+                  <img class="" src="./assets/images/onion.png" alt="product image" />
+                </figure>
+                <div class="product-info flex flex-col content-between items-start">
+                  <div class="review-widget flex gap-2">
+                    <figure><img src="./assets/icons/star.svg" alt="star" /></figure>
+                    <span>4.5</span>
+                  </div>
+                  <h2 class="title font-medium text-xl"><a href="#">Onion 1 KG</a></h2>
+                  <span class="price text-base font-medium">$39.99</span>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
+                <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
+                  <img class="" src="./assets/images/onion.png" alt="product image" />
+                </figure>
+                <div class="product-info flex flex-col content-between items-start">
+                  <div class="review-widget flex gap-2">
+                    <figure><img src="./assets/icons/star.svg" alt="star" /></figure>
+                    <span>4.5</span>
+                  </div>
+                  <h2 class="title font-medium text-xl"><a href="#">Onion 1 KG</a></h2>
+                  <span class="price text-base font-medium">$39.99</span>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
+                <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
+                  <img class="" src="./assets/images/onion.png" alt="product image" />
+                </figure>
+                <div class="product-info flex flex-col content-between items-start">
+                  <div class="review-widget flex gap-2">
+                    <figure><img src="./assets/icons/star.svg" alt="star" /></figure>
+                    <span>4.5</span>
+                  </div>
+                  <h2 class="title font-medium text-xl"><a href="#">Onion 1 KG</a></h2>
+                  <span class="price text-base font-medium">$39.99</span>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
+                <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
+                  <img class="" src="./assets/images/onion.png" alt="product image" />
+                </figure>
+                <div class="product-info flex flex-col content-between items-start">
+                  <div class="review-widget flex gap-2">
+                    <figure><img src="./assets/icons/star.svg" alt="star" /></figure>
+                    <span>4.5</span>
+                  </div>
+                  <h2 class="title font-medium text-xl"><a href="#">Onion 1 KG</a></h2>
+                  <span class="price text-base font-medium">$39.99</span>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
+                <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
+                  <img class="" src="./assets/images/onion.png" alt="product image" />
+                </figure>
+                <div class="product-info flex flex-col content-between items-start">
+                  <div class="review-widget flex gap-2">
+                    <figure><img src="./assets/icons/star.svg" alt="star" /></figure>
+                    <span>4.5</span>
+                  </div>
+                  <h2 class="title font-medium text-xl"><a href="#">Onion 1 KG</a></h2>
+                  <span class="price text-base font-medium">$39.99</span>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
+                <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
+                  <img class="" src="./assets/images/onion.png" alt="product image" />
+                </figure>
+                <div class="product-info flex flex-col content-between items-start">
+                  <div class="review-widget flex gap-2">
+                    <figure><img src="./assets/icons/star.svg" alt="star" /></figure>
+                    <span>4.5</span>
+                  </div>
+                  <h2 class="title font-medium text-xl"><a href="#">Onion 1 KG</a></h2>
+                  <span class="price text-base font-medium">$39.99</span>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
+                <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
+                  <img class="" src="./assets/images/onion.png" alt="product image" />
+                </figure>
+                <div class="product-info flex flex-col content-between items-start">
+                  <div class="review-widget flex gap-2">
+                    <figure><img src="./assets/icons/star.svg" alt="star" /></figure>
+                    <span>4.5</span>
+                  </div>
+                  <h2 class="title font-medium text-xl"><a href="#">Onion 1 KG</a></h2>
+                  <span class="price text-base font-medium">$39.99</span>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
+                <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
+                  <img class="" src="./assets/images/onion.png" alt="product image" />
+                </figure>
+                <div class="product-info flex flex-col content-between items-start">
+                  <div class="review-widget flex gap-2">
+                    <figure><img src="./assets/icons/star.svg" alt="star" /></figure>
+                    <span>4.5</span>
+                  </div>
+                  <h2 class="title font-medium text-xl"><a href="#">Onion 1 KG</a></h2>
+                  <span class="price text-base font-medium">$39.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- popular section end -->
+
+    <!-- new offer section start -->
+    <section class="new-offer-section">
+      <div class="max-w-screen-xl mx-auto py-28">
+        <h2 class="text-primary text-4xl font-semibold lg:pb-10">Arrival & Offers</h2>
+        <div class="tow-col-ads grid grid-cols-2 gap-7">
+          <!-- ads item 1 -->
+          <div class="ads bg-adsBg1 p-10 rounded-lg grid grid-cols-2 items-center">
+            <div class="ads-content flex flex-col gap-3 items-start content-start text-left">
+              <img class="-ml-6 mb-3 w-3/5" src="./assets/images/dawat-logo.png" alt="" />
+              <a class="py-3 px-8 rounded-lg bg-[#63b76d] text-white hover:opacity-90 font-normal" href="#">Cook Exotic Dishes</a>
+              <h3 class="text-white font-normal text-3xl mt-2">UP to <span class="font-bold"> 20% OFF</span></h3>
+            </div>
+            <img class="w-5/5 ml-auto" src="./assets/images/dawat-mock-up.png" alt="" />
+          </div>
+          <!-- ads item 1 -->
+          <div class="ads bg-adsBg2 p-10 rounded-lg grid grid-cols-2 items-center">
+            <div class="ads-content flex flex-col gap-3 items-start content-start text-left">
+              <img class="-ml-2 mb-1 w-2/5" src="./assets/images/india-gate-logo.png" alt="" />
+              <a class="py-3 px-8 rounded-lg bg-[#2a4d97] text-white hover:opacity-90 font-normal" href="#">Cook Exotic Dishes</a>
+              <h3 class="text-white font-normal text-3xl mt-2">UP to <span class="font-bold"> 40% OFF</span></h3>
+            </div>
+            <img class="w-3/5 ml-auto" src="./assets/images/india-gate-mock-up.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- new offer section end -->
+
+    <!-- Newsletr section  start -->
+    <section class="new-offer-section -mb-[210px] z-10 relative">
+      <div class="max-w-screen-xl mx-auto p-16 bg-secondary rounded-xl">
+        <div class="row flex gap-32 items-center">
+          <div class="left text-center">
+            <img class="w-5/6 mx-auto" src="./assets/images/vegetable-busket.png" alt="" />
+          </div>
+          <div class="right">
+            <h2 class="font-bold text-4xl opacity-90 mb-2">Get Grocery News!</h2>
+            <p class="text-base">Exclusive training tips, ticks, product deals and more.</p>
+            <form action="#" class="flex flex-col items-start gap-4">
+              <input class="bg-white p-3 rounded-lg mt-3 focus:outline-none w-11/12" type="email" name="email" id="" placeholder="Enter email" />
+              <input class="bg-primary text-white px-6 py-2.5 rounded-md cursor-pointer hover:opacity-90" type="submit" value="Subscribe" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletr section  end-->
+    <footer class="bg-primary">
+      <div class="max-w-screen-xl mx-auto pt-[350px] pb-28 flex justify-between">
+        <div class="col-span-2">
+          <figure class="mb-6">
+            <a href="#"><img src="./assets/images/logo-footer.png" alt="" /></a>
+          </figure>
+          <p class="text-white opacity-90">
+            Discover a world of treats, toys, and <br />
+            essentials handpicked for your furry <br />
+            friends
+          </p>
+        </div>
+        <div>
+          <h5 class="text-white text-lg font-semibold mb-4">Quick links</h5>
+          <ul class="space-y-3">
+            <li><a class="text-white opacity-90 hover:underline hover:opacity-100" href="#">Product</a></li>
+            <li><a class="text-white opacity-90 hover:underline hover:opacity-100" href="#">Services</a></li>
+            <li><a class="text-white opacity-90 hover:underline hover:opacity-100" href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-white text-lg font-semibold mb-4">Follow Us</h5>
+          <ul class="flex gap-3">
+            <li>
+              <a href="#"><img src="./assets/icons/fb.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/icons/ins.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/icons/link.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/icons/yout.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#179800",
+              secondary: "#EFEBE3",
+              adsBg1: "#115414",
+              adsBg2: "#102861",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
