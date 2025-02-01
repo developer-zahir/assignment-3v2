@@ -11,11 +11,14 @@
     <!-- header start -->
     <header class="bg-secondary">
       <div class="max-w-screen-xl mx-auto">
-        <nav class="flex justify-between items-center p-5">
+        <nav class="flex justify-between items-center p-4 md:p-5 border border-b-1 border-gray-300 lg:border-b-0">
           <div class="left">
-            <a href="#" class="logo"><img class="w-32" src="./assets/images/logo-header.png" alt="logo" /></a>
+            <a href="#" class="logo"><img class="w-24 md:w-32" src="./assets/images/logo-header.png" alt="logo" /></a>
           </div>
-          <div class="right flex items-center lg:gap-24">
+          <label for="mobile-menu" class="block lg:hidden">
+            <img class="cursor-pointer" src="./assets/icons/bars-3.svg" alt="" />
+          </label>
+          <div class="right items-center lg:gap-24 hidden lg:visible lg:flex">
             <ul class="menu list-none flex lg:gap-7">
               <li><a href="#">Product</a></li>
               <li><a href="#">Services</a></li>
@@ -35,23 +38,23 @@
         </nav>
 
         <!-- banner  -->
-        <div class="banner-section text-center lg:mt-20">
-          <h1 class="text-[56px] font-semibold">
+        <div class="banner-section text-center mt-16 lg:mt-20">
+          <h1 class="text-3xl md:text-[40px] md:leading-[55px] lg:text-[56px] lg:leading-[65px] font-semibold">
             Freshness <span class="text-primary">You Can <br />Count</span>, Prices You’ll Love!
           </h1>
-          <p class="font-xl lg:mt-6 lg:mb-8">
+          <p class="font-xl mt-3 md:mt-6 mb-8">
             Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br />staples, we’ve got you covered every day!
           </p>
-          <img class="mx-auto max-w-3xl" src="./assets/images/hero-vegetables.png" alt="" />
+          <img class="mx-auto max-w-lg w-5/6 md:max-w-xl lg:max-w-3xl" src="./assets/images/hero-vegetables.png" alt="" />
         </div>
       </div>
     </header>
 
     <!-- services section start -->
     <section class="services-section bg-white">
-      <div class="max-w-screen-xl mx-auto py-28">
-        <h2 class="text-primary text-4xl font-semibold lg:pb-10">Services</h2>
-        <div class="services-card-wrapper grid grid-flow-col grid-cols-3 gap-6">
+      <div class="max-w-screen-xl mx-auto py-16 md:py-28 px-5">
+        <h2 class="text-primary text-4xl font-semibold pb-8 lg:pb-10">Services</h2>
+        <div class="services-card-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- service item -->
           <div class="card bg-secondary p-7 rounded-xl flex flex-col justify-center gap-3 text-center">
             <figure class="mx-auto bg-white p-5 rounded-full mb-3">
@@ -92,19 +95,19 @@
 
     <!-- popular section start -->
     <section class="services-section bg-secondary">
-      <div class="max-w-screen-xl mx-auto py-28">
-        <h2 class="text-primary text-4xl font-semibold lg:pb-10">Popular Products</h2>
-        <div class="lg:grid grid-flow-col grid-cols-3 gap-6">
-          <div class="ads bg-gradient-to-br from-[#53db3a] to-[#e0f9dc] p-10 rounded-lg relative">
-            <div class="ads-content flex flex-col gap-3 items-start">
+      <div class="max-w-screen-xl mx-auto py-16 md:py-28 px-5">
+        <h2 class="text-primary text-4xl font-semibold pb-8 lg:pb-10">Popular Products</h2>
+        <div class="grid lg:grid-cols-3 gap-6">
+          <div class="ads md:min-h-52 bg-gradient-to-br from-[#53db3a] to-[#e0f9dc] p-10 rounded-lg relative overflow-hidden md:grid">
+            <div class="ads-content z-10 flex flex-col gap-3 items-start relative">
               <h3 class="text-white font-medium text-3xl">30% off</h3>
               <p class="text-balance text-black opacity-80">Discover a world of treats, toys, and essentials handpicked for</p>
               <a class="py-2.5 px-7 rounded-lg bg-white" href="#">Buy Now</a>
             </div>
-            <img class="absolute bottom-0 right-0 w-7/12" src="./assets/images/vegetable-offer.png" alt="" />
+            <img class="-z-0 absolute bottom-0 right-0 w-7/12" src="./assets/images/vegetable-offer.png" alt="" />
           </div>
-          <div class="popular-products col-span-2">
-            <div class="popular-product-wrapper grid grid-flow-row grid-cols-3 gap-4">
+          <div class="popular-products lg:col-span-2">
+            <div class="popular-product-wrapper grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <!-- item -->
               <div class="product-item flex gap-3 items-center bg-white p-4 rounded-lg border shadow-sm">
                 <figure class="bg-secondary w-20 h-20 rounded-lg flex items-center justify-center">
@@ -240,26 +243,34 @@
 
     <!-- new offer section start -->
     <section class="new-offer-section">
-      <div class="max-w-screen-xl mx-auto py-28">
-        <h2 class="text-primary text-4xl font-semibold lg:pb-10">Arrival & Offers</h2>
-        <div class="tow-col-ads grid grid-cols-2 gap-7">
+      <div class="max-w-screen-xl mx-auto py-16 md:py-28 px-5">
+        <h2 class="text-primary text-4xl font-semibold pb-8 lg:pb-10">Arrival & Offers</h2>
+        <div class="tow-col-ads grid grid-cols-1 lg:grid-cols-2 gap-7">
           <!-- ads item 1 -->
-          <div class="ads bg-adsBg1 p-10 rounded-lg grid grid-cols-2 items-center">
+          <div class="ads bg-adsBg1 p-5 md:p-10 rounded-lg grid grid-cols-2 items-center">
             <div class="ads-content flex flex-col gap-3 items-start content-start text-left">
-              <img class="-ml-6 mb-3 w-3/5" src="./assets/images/dawat-logo.png" alt="" />
-              <a class="py-3 px-8 rounded-lg bg-[#63b76d] text-white hover:opacity-90 font-normal" href="#">Cook Exotic Dishes</a>
-              <h3 class="text-white font-normal text-3xl mt-2">UP to <span class="font-bold"> 20% OFF</span></h3>
+              <img class="ml-0 sm:-ml-6 mb-3 w-3/5" src="./assets/images/dawat-logo.png" alt="" />
+              <a
+                class="py-2 md:py-3 px-3 md:px-8 rounded-lg bg-[#63b76d] text-white hover:opacity-90 font-normal text-sm md:text-base lg:text-lg"
+                href="#"
+                >Cook Exotic Dishes</a
+              >
+              <h3 class="text-white font-normal text-1xl md:text-3xl mt-2">UP to <span class="font-bold"> 20% OFF</span></h3>
             </div>
-            <img class="w-5/5 ml-auto" src="./assets/images/dawat-mock-up.png" alt="" />
+            <img class="w-4/5 md:w-5/5 ml-auto" src="./assets/images/dawat-mock-up.png" alt="" />
           </div>
-          <!-- ads item 1 -->
-          <div class="ads bg-adsBg2 p-10 rounded-lg grid grid-cols-2 items-center">
+          <!-- ads item 2 -->
+          <div class="ads bg-adsBg2 p-5 md:p-10 rounded-lg grid grid-cols-2 items-center">
             <div class="ads-content flex flex-col gap-3 items-start content-start text-left">
               <img class="-ml-2 mb-1 w-2/5" src="./assets/images/india-gate-logo.png" alt="" />
-              <a class="py-3 px-8 rounded-lg bg-[#2a4d97] text-white hover:opacity-90 font-normal" href="#">Cook Exotic Dishes</a>
-              <h3 class="text-white font-normal text-3xl mt-2">UP to <span class="font-bold"> 40% OFF</span></h3>
+              <a
+                class="py-2 md:py-3 px-3 md:px-8 rounded-lg bg-[#2a4d97] text-white hover:opacity-90 font-normal text-sm md:text-base lg:text-lg"
+                href="#"
+                >Cook Exotic Dishes</a
+              >
+              <h3 class="text-white font-normal text-1xl md:text-3xl mt-2">UP to <span class="font-bold"> 40% OFF</span></h3>
             </div>
-            <img class="w-3/5 ml-auto" src="./assets/images/india-gate-mock-up.png" alt="" />
+            <img class="w-3/6 md:w-3/5 ml-auto pr-1 md:pr-0" src="./assets/images/india-gate-mock-up.png" alt="" />
           </div>
         </div>
       </div>
@@ -267,17 +278,23 @@
     <!-- new offer section end -->
 
     <!-- Newsletr section  start -->
-    <section class="new-offer-section -mb-[210px] z-10 relative">
-      <div class="max-w-screen-xl mx-auto p-16 bg-secondary rounded-xl">
-        <div class="row flex gap-32 items-center">
+    <section class="new-offer-section -mb-[210px] z-10 relative mx-5 md:mx-0">
+      <div class="max-w-screen-xl mx-auto p-10 md:p-16 bg-secondary rounded-xl">
+        <div class="flex flex-col md:flex-row gap-5 md:gap-10 lg:gap-32 items-center">
           <div class="left text-center">
-            <img class="w-5/6 mx-auto" src="./assets/images/vegetable-busket.png" alt="" />
+            <img class="w-4/6 md:w-5/6 mx-auto" src="./assets/images/vegetable-busket.png" alt="" />
           </div>
           <div class="right">
-            <h2 class="font-bold text-4xl opacity-90 mb-2">Get Grocery News!</h2>
-            <p class="text-base">Exclusive training tips, ticks, product deals and more.</p>
-            <form action="#" class="flex flex-col items-start gap-4">
-              <input class="bg-white p-3 rounded-lg mt-3 focus:outline-none w-11/12" type="email" name="email" id="" placeholder="Enter email" />
+            <h2 class="font-bold text-2xl md:text-4xl opacity-90 mb-2 text-center md:text-left">Get Grocery News!</h2>
+            <p class="text-base text-center md:text-left">Exclusive training tips, ticks, product deals and more.</p>
+            <form action="#" class="flex flex-col items-center md:items-start gap-4">
+              <input
+                class="bg-white p-3 rounded-lg mt-3 focus:outline-none w-full md:w-11/12"
+                type="email"
+                name="email"
+                id=""
+                placeholder="Enter email"
+              />
               <input class="bg-primary text-white px-6 py-2.5 rounded-md cursor-pointer hover:opacity-90" type="submit" value="Subscribe" />
             </form>
           </div>
@@ -286,8 +303,8 @@
     </section>
     <!-- Newsletr section  end-->
     <footer class="bg-primary">
-      <div class="max-w-screen-xl mx-auto pt-[350px] pb-28 flex justify-between">
-        <div class="col-span-2">
+      <div class="max-w-screen-xl mx-auto pt-[280px] md:pt-[350px] pb-16 md:pb-28 px-5 flex flex-col md:flex-row justify-between gap-10 md:gap-0">
+        <div class="">
           <figure class="mb-6">
             <a href="#"><img src="./assets/images/logo-footer.png" alt="" /></a>
           </figure>
@@ -322,6 +339,12 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="footer-bottom text-center bg-[#217912] px-1 py-4 md:p-7 text-white text-sm font-light opacity-90">
+        <p>
+          &copy; 2025 All Right Reserved By
+          <a class="hover:text-secondary hover:underline" href="https://developerzahir.com" target="_blank">Developer zahir</a>
+        </p>
       </div>
     </footer>
     <script>
